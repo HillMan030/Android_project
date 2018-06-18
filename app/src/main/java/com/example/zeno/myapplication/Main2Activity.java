@@ -16,7 +16,7 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-
+//helloworld
         Intent intent = getIntent();
         int position = intent.getIntExtra("position", 0);
 
