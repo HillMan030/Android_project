@@ -36,7 +36,7 @@ public class Main2Activity extends AppCompatActivity {
         descreiption.setText(dec[position]);
         location.setText(loc[position]);
         phonenum.setText(phone[position]);
-        //image
+        //image add
         switch(position){
             case 2:
                 image.setImageResource(R.drawable.i3);
