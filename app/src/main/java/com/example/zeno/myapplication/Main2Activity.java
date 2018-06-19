@@ -19,7 +19,10 @@ public class Main2Activity extends AppCompatActivity {
             R.drawable.i7,
             R.drawable.i12,
             R.drawable.i13,
-            R.drawable.i15
+            R.drawable.i15,
+            R.drawable.f4,
+            R.drawable.f6,
+            R.drawable.f7
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,7 @@ public class Main2Activity extends AppCompatActivity {
         TextView location = (TextView) findViewById(R.id.location);
         TextView phonenum = (TextView) findViewById(R.id.phonenum);
         ImageView image =(ImageView)findViewById(R.id.image);
+        ImageView food =(ImageView)findViewById(R.id.food);
         result.setText(str1[position]);
         descreiption.setText(dec[position]);
         location.setText(loc[position]);
@@ -40,27 +44,35 @@ public class Main2Activity extends AppCompatActivity {
         switch(position){
             case 2:
                 image.setImageResource(R.drawable.i3);
+                food.setImageResource(R.drawable.i00);
                 break;
             case 3:
                 image.setImageResource(R.drawable.i4);
+                food.setImageResource(R.drawable.f4);
                 break;
             case 5:
                 image.setImageResource(R.drawable.i6);
+                food.setImageResource(R.drawable.f6);
                 break;
             case 6:
                 image.setImageResource(R.drawable.i7);
+                food.setImageResource(R.drawable.f7);
                 break;
             case 11:
                 image.setImageResource(R.drawable.i12);
+                food.setImageResource(R.drawable.i00);
                 break;
             case 12:
                 image.setImageResource(R.drawable.i13);
+                food.setImageResource(R.drawable.i00);
                 break;
             case 14:
                 image.setImageResource(R.drawable.i15);
+                food.setImageResource(R.drawable.i00);
                 break;
             default:
                 image.setImageResource(R.drawable.i00);
+                food.setImageResource(R.drawable.i00);
                 break;
         }
     }
